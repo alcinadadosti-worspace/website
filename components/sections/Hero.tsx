@@ -5,12 +5,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-gradient-to-br from-pink-50 via-white to-purple-50">
+    <section className="relative h-screen w-full overflow-hidden bg-white">
       {/* Background Image/Video Container */}
       <div className="absolute inset-0 z-0">
         <div className="relative h-full w-full">
           {/* Placeholder para vídeo ou imagem de background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-purple-500/10 to-pink-300/20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-sage-100/30 via-champagne-100/20 to-sage-50/30" />
 
           {/* Overlay sutil */}
           <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]" />
@@ -42,10 +42,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-6 text-4xl font-bold leading-tight tracking-tight text-gray-900 sm:text-5xl lg:text-7xl"
+            className="mb-6 text-4xl font-bold leading-tight tracking-tight text-neutral-800 sm:text-5xl lg:text-7xl"
           >
             Beleza que{" "}
-            <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-sage-500">
               transforma
             </span>
           </motion.h1>
@@ -55,7 +55,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-gray-700 sm:text-xl lg:text-2xl"
+            className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-neutral-700 sm:text-xl lg:text-2xl"
           >
             Operando as melhores marcas de cosméticos e beleza do Brasil,
             com origem em Alagoas e paixão por encantar nossos clientes.
@@ -69,7 +69,7 @@ export default function Hero() {
           >
             <a
               href="#stores"
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-xl transition-all hover:scale-105 hover:shadow-2xl"
+              className="group inline-flex items-center gap-2 rounded-full bg-sage-500 px-8 py-4 text-lg font-semibold text-white shadow-xl transition-all hover:scale-105 hover:shadow-2xl hover:bg-sage-600"
             >
               Conheça Nossas Lojas
               <svg

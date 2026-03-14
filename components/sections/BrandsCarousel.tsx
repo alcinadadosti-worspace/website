@@ -49,16 +49,16 @@ export default function BrandsCarousel() {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <span className="inline-block rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold text-pink-700">
+          <span className="inline-block rounded-full bg-champagne-100 px-4 py-2 text-sm font-semibold text-sage-700">
             Nossas Marcas
           </span>
-          <h2 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+          <h2 className="mt-6 text-4xl font-bold tracking-tight text-neutral-800 sm:text-5xl lg:text-6xl">
             As melhores marcas do{" "}
-            <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-sage-500">
               mercado
             </span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-700">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-700">
             Trabalhamos com as marcas mais reconhecidas e amadas pelos
             brasileiros
           </p>
