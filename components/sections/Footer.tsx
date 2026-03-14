@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-6">
               <Image
-                src="/images/logo/94512fff-9abf-40fa-8b0a-de8a5f7383ad.png"
+                src="/images/logo/94512fff-9abf-40fa-8b0a-de8a5f7383ad-removebg-preview.png"
                 alt="Alcina Logo"
                 width={120}
                 height={120}

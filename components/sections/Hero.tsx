@@ -42,7 +42,7 @@ export default function Hero() {
             className="mb-8 flex justify-center"
           >
             <Image
-              src="/images/logo/94512fff-9abf-40fa-8b0a-de8a5f7383ad.png"
+              src="/images/logo/94512fff-9abf-40fa-8b0a-de8a5f7383ad-removebg-preview.png"
               alt="Alcina Logo"
               width={200}
               height={200}
