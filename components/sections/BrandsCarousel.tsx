@@ -88,14 +88,14 @@ export default function BrandsCarousel() {
             {brands.map((brand, index) => (
               <div
                 key={`first-${index}`}
-                className="flex h-32 w-48 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-white to-gray-50 p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="flex h-28 w-48 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white p-4 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md"
               >
                 <Image
                   src={brand.logo}
                   alt={brand.name}
                   width={180}
                   height={100}
-                  className="h-auto w-full object-contain mix-blend-multiply opacity-90 transition-opacity hover:opacity-100"
+                  className="h-full w-full object-contain mix-blend-multiply"
                 />
               </div>
             ))}
@@ -116,14 +116,14 @@ export default function BrandsCarousel() {
             {brands.map((brand, index) => (
               <div
                 key={`second-${index}`}
-                className="flex h-32 w-48 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-white to-gray-50 p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="flex h-28 w-48 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white p-4 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md"
               >
                 <Image
                   src={brand.logo}
                   alt={brand.name}
                   width={180}
                   height={100}
-                  className="h-auto w-full object-contain mix-blend-multiply opacity-90 transition-opacity hover:opacity-100"
+                  className="h-full w-full object-contain mix-blend-multiply"
                 />
               </div>
             ))}
@@ -144,14 +144,14 @@ export default function BrandsCarousel() {
             {brands.map((brand, index) => (
               <div
                 key={`third-${index}`}
-                className="flex h-32 w-48 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-white to-gray-50 p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="flex h-28 w-48 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white p-4 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md"
               >
                 <Image
                   src={brand.logo}
                   alt={brand.name}
                   width={180}
                   height={100}
-                  className="h-auto w-full object-contain mix-blend-multiply opacity-90 transition-opacity hover:opacity-100"
+                  className="h-full w-full object-contain mix-blend-multiply"
                 />
               </div>
             ))}
