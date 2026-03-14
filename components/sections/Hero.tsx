@@ -6,14 +6,28 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-white">
-      {/* Background Image/Video Container */}
+      {/* Background Video Container */}
       <div className="absolute inset-0 z-0">
         <div className="relative h-full w-full">
-          {/* Placeholder para vídeo ou imagem de background */}
+          {/* Background Video */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover"
+            poster="/images/hero-fallback.jpg"
+          >
+            <source src="/videos/hero-background.mp4" type="video/mp4" />
+            <source src="/videos/hero-background.webm" type="video/webm" />
+            {/* Fallback para browsers sem suporte a vídeo */}
+          </video>
+
+          {/* Fallback gradient se vídeo não carregar */}
           <div className="absolute inset-0 bg-gradient-to-br from-sage-100/30 via-champagne-100/20 to-sage-50/30" />
 
-          {/* Overlay sutil */}
-          <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]" />
+          {/* Overlay sutil para melhorar legibilidade */}
+          <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]" />
         </div>
       </div>
 
