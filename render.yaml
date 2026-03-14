@@ -1,11 +1,14 @@
 services:
   - type: web
     name: alcina-website
-    env: node
-    region: oregon
-    plan: free
+    env: static
     buildCommand: npm install && npm run build
-    startCommand: npm start
-    envVars:
-      - key: NODE_VERSION
-        value: 20
+    staticPublishPath: ./out
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=0, must-revalidate
+      - path: /static/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
